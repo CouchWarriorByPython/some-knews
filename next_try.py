@@ -10,8 +10,8 @@ server_socket.bind(('localhost', 5000))
 server_socket.listen()
 
 
-def accept_connection(server_socket):
-    client_socker, addr = server_socket.accept()
+def accept_connection(server_sock):
+    client_socker, addr = server_sock.accept()
     print('Connection from', addr)
 
     to_monitor.append(client_socker)
