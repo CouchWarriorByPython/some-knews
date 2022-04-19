@@ -21,12 +21,11 @@ def gen2(n):
 g1 = gen1('dima')
 g2 = gen2(5)
 
-
 tasks = [g1, g2]
 
 
 def mac(s):
-    return f'{s* 2} -- int' if isinstance(s, int) else s + ' -- str'
+    return f'{s * 2} -- int' if isinstance(s, int) else s + ' -- str'
 
 
 while tasks:
